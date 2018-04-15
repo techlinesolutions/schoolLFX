@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C1D9F9;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolline.AddNewGradeLevelController">
+    <stylesheets>
+        <URL value="@darktheme.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="addButton" defaultButton="true" layoutX="148.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAddButtonClicked" style="-fx-background-color: #1d1d1d;" text="ADD" />
+      <Button fx:id="btnClear" layoutX="245.0" layoutY="174.0" mnemonicParsing="false" onAction="#onClearButtonClicked" text="CLEAR" />
+      <Label layoutX="45.0" layoutY="101.0" text="DESCRIPTION:" />
+      <Label layoutX="93.0" layoutY="59.0" text="NAME: " />
+      <Button fx:id="btnClose" layoutX="540.0" layoutY="250.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+      <Label layoutX="273.0" layoutY="24.0" prefHeight="21.0" prefWidth="176.0" text="ADD NEW GRADE LEVEL" />
+      <TextArea fx:id="item_desc_box" layoutX="148.0" layoutY="98.0" prefHeight="58.0" prefWidth="425.0" promptText="-optional-" />
+      <TextField fx:id="item_name_box" layoutX="148.0" layoutY="51.0" prefHeight="25.0" prefWidth="425.0" />
+   </children>
+</AnchorPane>

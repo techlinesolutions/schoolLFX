@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="addNewStudentPane" prefHeight="618.0" prefWidth="745.0" style="-fx-background-color: C1D9F9;" styleClass="mainFxmlClass" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolline.AddNewStudentController">
+
+
+    <children>
+   
+ 
+        <TextField fx:id="item_first_name_box" layoutX="134.0" layoutY="73.0" prefHeight="37.0" prefWidth="200.0" />
+        <TextField fx:id="item_last_name_box" layoutX="341.0" layoutY="73.0" prefHeight="37.0" prefWidth="200.0" />
+        <TextField fx:id="mother_first_name_box" layoutX="135.0" layoutY="116.0" prefHeight="37.0" prefWidth="200.0" />
+        <TextField fx:id="mother_last_name_box" layoutX="342.0" layoutY="116.0" prefHeight="37.0" prefWidth="200.0" />
+        <TextField fx:id="father_first_name_box" layoutX="135.0" layoutY="160.0" prefHeight="37.0" prefWidth="200.0" />
+        <TextField fx:id="father_last_name_box" layoutX="342.0" layoutY="160.0" prefHeight="37.0" prefWidth="200.0" />
+        <DatePicker fx:id="item_dob_box" layoutX="135.0" layoutY="204.0" prefHeight="37.0" prefWidth="200.0" />
+        <RadioButton fx:id="radio_male" layoutX="410.0" layoutY="216.0" mnemonicParsing="false" selected="true" text="MALE" toggleGroup="$radioGroupToggle">
+          <toggleGroup>
+                  <ToggleGroup fx:id="radioGroupToggle" />
+               </toggleGroup> 
+        </RadioButton>
+        <RadioButton fx:id="radio_female" layoutX="481.0" layoutY="216.0" mnemonicParsing="false" text="FEMALE" toggleGroup="$radioGroupToggle" />
+        <TextArea fx:id="item_home_address_box" layoutX="135.0" layoutY="248.0" prefHeight="58.0" prefWidth="408.0" />
+        <TextField fx:id="item_phone_box" layoutX="135.0" layoutY="314.0" prefHeight="37.0" prefWidth="173.0" />
+        <TextField fx:id="item_email_box" layoutX="376.0" layoutY="315.0" prefHeight="37.0" prefWidth="166.0" />
+        <ChoiceBox fx:id="choicebox_classroom" layoutX="134.0" layoutY="361.0" prefHeight="31.0" prefWidth="173.0" />
+        <ChoiceBox fx:id="choicebox_grade" layoutX="376.0" layoutY="361.0" prefHeight="31.0" prefWidth="166.0" />
+        <TextField fx:id="item_prev_school_box" layoutX="135.0" layoutY="403.0" prefHeight="37.0" prefWidth="173.0" promptText="-NONE-" />
+        <TextField fx:id="item_hostel_box" layoutX="376.0" layoutY="404.0" prefHeight="37.0" prefWidth="166.0" promptText="-NONE-" />
+        <TextArea fx:id="item_remarks_box" layoutX="133.0" layoutY="450.0" prefHeight="58.0" prefWidth="408.0" promptText="-NONE-" />
+        <Label layoutX="278.0" layoutY="14.0" prefHeight="21.0" prefWidth="137.0" text="ADD NEW STUDENT" />
+        <Button fx:id="btnClose" layoutX="642.0" layoutY="516.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+        <Label layoutX="189.0" layoutY="47.0" text="FIRST NAME: " />
+        <Label layoutX="17.0" layoutY="323.0" prefHeight="21.0" prefWidth="137.0" text="PHONE NUMBER:" />
+        <Label layoutX="38.0" layoutY="366.0" text="CLASS ROOM:" />
+        <Button fx:id="btnAdd" layoutX="130.0" layoutY="516.0" mnemonicParsing="false" onAction="#onAddButtonClicked" text="ADD">
+            <effect>
+                <Blend />
+            </effect>
+        </Button>
+        <Button fx:id="btnClear" layoutX="227.0" layoutY="516.0" mnemonicParsing="false" onAction="#onClearButtonClicked" text="CLEAR" />
+        <Label layoutX="327.0" layoutY="322.0" prefHeight="21.0" prefWidth="50.0" text="EMAIL:" />
+        <Label layoutX="388.0" layoutY="47.0" text="LAST NAME: " />
+        <Label layoutX="20.0" layoutY="254.0" prefHeight="21.0" prefWidth="128.0" text="HOME ADDRESS:" />
+        <Label layoutX="77.0" layoutY="170.0" prefHeight="21.0" prefWidth="64.0" text="FATHER:" />
+        <Label layoutX="26.0" layoutY="214.0" prefHeight="21.0" prefWidth="116.0" text="DATE OF BIRTH:" />
+        <Label layoutX="69.0" layoutY="122.0" prefHeight="21.0" prefWidth="79.0" text="MOTHER:" />
+        <Label layoutX="66.0" layoutY="79.0" prefHeight="21.0" prefWidth="79.0" text="STUDENT:" />
+        <Label layoutX="323.0" layoutY="366.0" text="GRADE:" />
+        <Label layoutX="339.0" layoutY="214.0" text="GENDER:" />
+        <Label layoutX="62.0" layoutY="458.0" prefHeight="21.0" prefWidth="72.0" text="REMARKS:" />
+        <Label layoutX="318.0" layoutY="411.0" prefHeight="21.0" prefWidth="64.0" text="HOSTEL:" />
+        <Label layoutX="2.0" layoutY="412.0" prefHeight="21.0" prefWidth="137.0" text="PREVIOUS SCHOOL:" />
+      <ImageView fx:id="imgTPlaceHolder" fitHeight="152.0" fitWidth="150.0" layoutX="568.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user-icon-placeholder.png" />
+         </image></ImageView>
+      <Button fx:id="btnChose" layoutX="567.0" layoutY="283.0" mnemonicParsing="false" onAction="#onChosePicture" text="CHOSE PICTURE" />
+      <TextField fx:id="imagePath_box" disable="true" editable="false" layoutX="567.0" layoutY="238.0" prefHeight="37.0" prefWidth="150.0" promptText="Path Of Selected File" />
+  
+    </children>
+</AnchorPane>

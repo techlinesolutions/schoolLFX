@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="1316.0" style="-fx-background-color: C1D9F9;" styleClass="mainFxmlClass" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolline.AllTeachersController">
+       <children>
+     
+
+            <Label layoutX="414.0" layoutY="14.0" styleClass="font" text="ALL TEACHERS">
+             
+            </Label>
+            <Button fx:id="btnClose" layoutX="1208.0" layoutY="507.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+            <TableView fx:id="tableTeacher" layoutX="28.0" layoutY="61.0" onMouseClicked="#onClickTable" prefHeight="200.0" prefWidth="1276.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="44.0" text="ID" />
+                  <TableColumn fx:id="nameCol" prefWidth="121.0" text="NAME" />
+            <TableColumn fx:id="genderCol" editable="false" minWidth="0.0" prefWidth="120.0" text="GENDER" />
+                  <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="147.0" text="ADDRESS" />
+                  <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="159.0" text="PHONE NO." />
+                  <TableColumn fx:id="emailCol" prefWidth="104.0" text="EMAIL" />
+            <TableColumn fx:id="subject1Col" prefWidth="131.0" text="SUBJECT1" />
+            <TableColumn fx:id="subject2Col" prefWidth="128.0" text="SUBJECT2" />
+            <TableColumn fx:id="subject3Col" prefWidth="125.0" text="SUBJECT3" />
+            <TableColumn fx:id="subject4Col" prefWidth="133.0" text="SUBJECT4" />
+                  <TableColumn fx:id="typeCol" prefWidth="140.0" text="TYPE" />
+                  <TableColumn fx:id="dateCol" prefWidth="107.0" text="DATE" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnDownloadReport" layoutX="1140.0" layoutY="19.0" mnemonicParsing="false" onAction="#onClickDownloadReport" text="Download Report" />
+      <AnchorPane layoutX="32.0" layoutY="285.0" prefHeight="212.0" prefWidth="1260.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="16.0" layoutY="10.0" text="NAME" />
+            <TextField fx:id="name_box" disable="true" editable="false" layoutX="16.0" layoutY="38.0" prefHeight="37.0" prefWidth="189.0" />
+            <Label layoutX="224.0" layoutY="11.0" text="GENDER" />
+            <Label layoutX="439.0" layoutY="10.0" text="EMAIL" />
+            <ChoiceBox fx:id="choiceboxSubject3" layoutX="636.0" layoutY="119.0" prefHeight="31.0" prefWidth="162.0" />
+            <Label layoutX="636.0" layoutY="91.0" text="SUBJECT 3" />
+            <Label layoutX="813.0" layoutY="92.0" text="SUBJECT 4" />
+            <ChoiceBox fx:id="choiceboxSubject4" layoutX="815.0" layoutY="119.0" prefHeight="31.0" prefWidth="162.0" />
+            <Button fx:id="btnUpdate" layoutX="781.0" layoutY="171.0" mnemonicParsing="false" onAction="#onClickUpdate" text="UPDATE" />
+            <TextField fx:id="type_box" layoutX="433.0" layoutY="119.0" prefHeight="37.0" prefWidth="189.0" />
+            <Button fx:id="btnDelete" layoutX="904.0" layoutY="171.0" mnemonicParsing="false" onAction="#onClickDelete" text="DELETE" />
+            <Label layoutX="222.0" layoutY="92.0" text="PHONE NO." />
+            <Label layoutX="437.0" layoutY="91.0" text="TYPE" />
+            <ChoiceBox fx:id="choiceboxSubject1" layoutX="636.0" layoutY="40.0" prefHeight="31.0" prefWidth="162.0" />
+            <TextField fx:id="phone_box" layoutX="222.0" layoutY="120.0" prefHeight="37.0" prefWidth="189.0" />
+            <Label layoutX="17.0" layoutY="91.0" text="ADDRESS" />
+            <TextField fx:id="address_box" layoutX="14.0" layoutY="119.0" prefHeight="37.0" prefWidth="189.0" />
+            <Label layoutX="636.0" layoutY="11.0" text="SUBJECT 1" />
+            <Label layoutX="813.0" layoutY="12.0" text="SUBJECT 2" />
+            <ChoiceBox fx:id="choiceboxSubject2" layoutX="815.0" layoutY="42.0" prefHeight="31.0" prefWidth="162.0" />
+            <TextField fx:id="email_box" layoutX="435.0" layoutY="39.0" prefHeight="37.0" prefWidth="189.0" />
+            <ChoiceBox fx:id="choiceboxGender" layoutX="222.0" layoutY="40.0" prefHeight="31.0" prefWidth="162.0" />
+         </children>
+      </AnchorPane>
+         </children>
+</AnchorPane>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="1069.0" style="-fx-background-color: C1D9F9;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolline.AddNewScoreController">
+    <stylesheets>
+        <URL value="@darktheme.css" />
+    </stylesheets>
+    <children>
+        <TextField fx:id="subject_1_col_1_box" alignment="CENTER_RIGHT" layoutX="332.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_2_box" alignment="CENTER_RIGHT" layoutX="411.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_3_box" alignment="CENTER_RIGHT" layoutX="489.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_4_box" alignment="CENTER_RIGHT" layoutX="568.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_7_box" alignment="CENTER_RIGHT" layoutX="806.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_6_box" alignment="CENTER_RIGHT" layoutX="727.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_1_col_5_box" alignment="CENTER_RIGHT" layoutX="649.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_3_box" alignment="CENTER_RIGHT" layoutX="487.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_2_box" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_1_box" alignment="CENTER_RIGHT" layoutX="330.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_7_box" alignment="CENTER_RIGHT" layoutX="804.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_6_box" alignment="CENTER_RIGHT" layoutX="725.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_5_box" alignment="CENTER_RIGHT" layoutX="647.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_2_col_4_box" alignment="CENTER_RIGHT" layoutX="569.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <ChoiceBox fx:id="choicebox_subject_3" layoutX="132.0" layoutY="256.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_1" layoutX="132.0" layoutY="170.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_4" layoutX="133.0" layoutY="301.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_2" layoutX="133.0" layoutY="213.0" prefHeight="31.0" prefWidth="189.0" />
+        <Label layoutX="299.0" layoutY="14.0" prefHeight="21.0" prefWidth="116.0" text="ADD SCORES" />
+        <Button fx:id="btnClose" layoutX="554.0" layoutY="558.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+        <Label layoutX="18.0" layoutY="53.0" text="STUDENT NAME: " />
+        <Label layoutX="262.0" layoutY="141.0" prefHeight="21.0" prefWidth="60.0" text="SCORES" />
+        <Button fx:id="btnAdd" layoutX="134.0" layoutY="525.0" mnemonicParsing="false" onAction="#onAddButtonClicked" text="ADD" />
+        <Button fx:id="btnClear" layoutX="231.0" layoutY="525.0" mnemonicParsing="false" onAction="#onClearButtonClicked" text="CLEAR" />
+        <Label alignment="CENTER_RIGHT" layoutX="346.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 1" />
+        <Label layoutX="391.0" layoutY="53.0" prefHeight="21.0" prefWidth="51.0" text="CLASS:" />
+        <Label layoutX="67.0" layoutY="97.0" text="GENDER:" />
+        <Label layoutX="390.0" layoutY="97.0" text="GRADE:" />
+        <ChoiceBox fx:id="choicebox_gender" disable="true" layoutX="132.0" layoutY="93.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_name" layoutX="132.0" layoutY="48.0" prefHeight="31.0" prefWidth="189.0" />
+        <Label layoutX="60.0" layoutY="175.0" text="SUBJECT 1:" />
+        <Label layoutX="61.0" layoutY="218.0" text="SUBJECT 2:" />
+        <Label layoutX="61.0" layoutY="261.0" text="SUBJECT 3:" />
+        <Label layoutX="61.0" layoutY="306.0" text="SUBJECT 4:" />
+        <Label alignment="CENTER_RIGHT" layoutX="820.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 7" />
+        <Label alignment="CENTER_RIGHT" layoutX="741.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 6" />
+        <Label alignment="CENTER_RIGHT" layoutX="663.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 5" />
+        <Label alignment="CENTER_RIGHT" layoutX="582.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 4" />
+        <Label alignment="CENTER_RIGHT" layoutX="503.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 3" />
+        <Label alignment="CENTER_RIGHT" layoutX="425.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="COL 2" />
+        <ChoiceBox fx:id="choicebox_subject_5" layoutX="132.0" layoutY="348.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_8" layoutX="133.0" layoutY="479.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_6" layoutX="133.0" layoutY="391.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_subject_7" layoutX="132.0" layoutY="434.0" prefHeight="31.0" prefWidth="189.0" />
+        <Label layoutX="61.0" layoutY="396.0" text="SUBJECT 6:" />
+        <Label layoutX="61.0" layoutY="439.0" text="SUBJECT 7:" />
+        <Label layoutX="60.0" layoutY="353.0" text="SUBJECT 5:" />
+        <Label layoutX="61.0" layoutY="484.0" text="SUBJECT 8:" />
+        <Label layoutX="965.0" layoutY="141.0" prefHeight="21.0" prefWidth="72.0" text="AVERAGE" underline="true" />
+        <Label layoutX="907.0" layoutY="141.0" prefHeight="21.0" prefWidth="43.0" text="SUM" underline="true" />
+        <TextField fx:id="subject_1_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="972.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_1_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="893.0" layoutY="169.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_2_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="970.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_2_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="891.0" layoutY="213.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_4_col_5_box" alignment="CENTER_RIGHT" layoutX="646.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_5_box" alignment="CENTER_RIGHT" layoutX="648.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_col_1_box" alignment="CENTER_RIGHT" layoutX="329.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_7_box" alignment="CENTER_RIGHT" layoutX="805.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_6_box" alignment="CENTER_RIGHT" layoutX="726.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="969.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_3_col_2_box" alignment="CENTER_RIGHT" layoutX="410.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_col_4_box" alignment="CENTER_RIGHT" layoutX="568.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="892.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_4_col_7_box" alignment="CENTER_RIGHT" layoutX="803.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_col_2_box" alignment="CENTER_RIGHT" layoutX="408.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_col_6_box" alignment="CENTER_RIGHT" layoutX="724.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_1_box" alignment="CENTER_RIGHT" layoutX="331.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_4_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="890.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_4_col_3_box" alignment="CENTER_RIGHT" layoutX="486.0" layoutY="302.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_4_box" alignment="CENTER_RIGHT" layoutX="567.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_col_3_box" alignment="CENTER_RIGHT" layoutX="488.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_3_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="971.0" layoutY="258.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_7_col_5_box" alignment="CENTER_RIGHT" layoutX="647.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_5_box" alignment="CENTER_RIGHT" layoutX="648.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="969.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_5_col_6_box" alignment="CENTER_RIGHT" layoutX="726.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_2_box" alignment="CENTER_RIGHT" layoutX="410.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_2_box" alignment="CENTER_RIGHT" layoutX="407.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_col_4_box" alignment="CENTER_RIGHT" layoutX="568.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_7_box" alignment="CENTER_RIGHT" layoutX="802.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_7_col_6_box" alignment="CENTER_RIGHT" layoutX="725.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_5_box" alignment="CENTER_RIGHT" layoutX="645.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_col_6_box" alignment="CENTER_RIGHT" layoutX="724.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_1_box" alignment="CENTER_RIGHT" layoutX="331.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_7_col_3_box" alignment="CENTER_RIGHT" layoutX="487.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_3_box" alignment="CENTER_RIGHT" layoutX="488.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_7_col_1_box" alignment="CENTER_RIGHT" layoutX="330.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="889.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_6_col_5_box" alignment="CENTER_RIGHT" layoutX="646.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_3_box" alignment="CENTER_RIGHT" layoutX="485.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_col_1_box" alignment="CENTER_RIGHT" layoutX="329.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_1_box" alignment="CENTER_RIGHT" layoutX="328.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_7_box" alignment="CENTER_RIGHT" layoutX="805.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="892.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_7_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="891.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_8_col_4_box" alignment="CENTER_RIGHT" layoutX="567.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_col_7_box" alignment="CENTER_RIGHT" layoutX="803.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_7_col_2_box" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="968.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_6_col_2_box" alignment="CENTER_RIGHT" layoutX="408.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_8_col_6_box" alignment="CENTER_RIGHT" layoutX="723.0" layoutY="481.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_sum_box" alignment="CENTER_RIGHT" editable="false" layoutX="890.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_7_col_7_box" alignment="CENTER_RIGHT" layoutX="804.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_col_4_box" alignment="CENTER_RIGHT" layoutX="567.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_6_col_3_box" alignment="CENTER_RIGHT" layoutX="486.0" layoutY="392.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <TextField fx:id="subject_5_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="971.0" layoutY="348.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_7_avg_box" alignment="CENTER_RIGHT" editable="false" layoutX="970.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: black;" text="0" />
+        <TextField fx:id="subject_7_col_4_box" alignment="CENTER_RIGHT" layoutX="566.0" layoutY="437.0" prefHeight="37.0" prefWidth="70.0" text="0" />
+        <ChoiceBox fx:id="choicebox_class" disable="true" layoutX="440.0" layoutY="48.0" prefHeight="31.0" prefWidth="189.0" />
+        <ChoiceBox fx:id="choicebox_grade" disable="true" layoutX="440.0" layoutY="92.0" prefHeight="31.0" prefWidth="189.0" />
+    </children>
+    <stylesheets>
+        <URL value="@darktheme.css" />
+    </stylesheets>
+</AnchorPane>
