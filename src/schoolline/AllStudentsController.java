@@ -583,8 +583,8 @@ public class AllStudentsController implements Initializable {
         String Students_email = email_box.getText().toUpperCase();
         String selected_Gender = choiceboxGender.getValue().toString().toUpperCase();
 
-        String Student_grade = choiceboxGrade.getValue().toString().toUpperCase();;
-        String Student_Classroom = choiceboxClassroom.getValue().toString().toUpperCase();;
+        String Student_grade = choiceboxGrade.getValue().toString().toUpperCase();
+        String Student_Classroom = choiceboxClassroom.getValue().toString().toUpperCase();
         String Student_hostel = hostel_box.getText().toUpperCase();;
         String Student_mother = mother_box.getText().toUpperCase();;
         String Student_father = father_box.getText().toUpperCase();;
